@@ -1,0 +1,13 @@
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin grid($size, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+  gap: $gap;
+}

@@ -1,0 +1,35 @@
+.h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4vw, 3.75rem);
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.h2 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  letter-spacing: 0.13em;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 3.125rem;
+    height: 2px;
+    background: #00a4e5;
+  }
+}
+
+.h3 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+
+.h4 {
+}
+
+.p {
+}

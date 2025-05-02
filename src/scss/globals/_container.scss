@@ -1,0 +1,8 @@
+.container {
+  width: min(var(--container-w), 100% - (var(--container-p) * 2));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-p);
+}
