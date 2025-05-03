@@ -1,0 +1,26 @@
+@import '../utils/mixins';
+@import '../utils/media';
+.header {
+  padding-block: clamp(1rem, 4vw, 3.5rem);
+  @media (orientation: landscape) {
+    padding-block: 1rem;
+  }
+  &__img {
+    order: 2;
+  }
+  &__btn {
+    font-weight: 400;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    color: #000;
+    padding: clamp(0.75rem, 1.5rem, 1rem) clamp(2.5rem, 4vw, 3.6rem);
+    border: 2px solid #263238;
+    border-radius: 5px;
+    @include media($tablet-big) {
+      font-size: 1.1rem;
+      padding: 0.75rem 2.5rem;
+    }
+    @include media($tablet) {
+      display: none;
+    }
+  }
+}

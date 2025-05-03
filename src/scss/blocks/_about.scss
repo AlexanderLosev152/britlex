@@ -1,0 +1,15 @@
+@import '../utils/media';
+.about {
+  &__wrapper {
+    grid-template-columns: 1fr 21rem;
+    gap: clamp(1rem, 5vw, 5rem);
+    @include media($mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__content {
+  }
+  &__title {
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+  }
+}

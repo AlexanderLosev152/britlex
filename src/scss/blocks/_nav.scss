@@ -1,0 +1,16 @@
+@import '../utils/mixins';
+@import '../utils/media';
+
+.nav {
+  @include media($tablet) {
+    display: none;
+  }
+  &__items {
+    gap: clamp(0.8rem, 3vw, 2rem);
+  }
+  &__link {
+    font-weight: 500;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    color: #263238;
+  }
+}

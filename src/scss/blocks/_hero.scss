@@ -1,0 +1,91 @@
+@import '../utils/mixins';
+@import '../utils/media';
+.hero {
+  @include media($mobile) {
+    flex-wrap: wrap;
+  }
+  &__content {
+    align-content: center;
+    justify-items: start;
+    max-width: 28rem;
+    @include media($mobile) {
+      order: 1;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 4rem;
+      line-height: 1.25;
+      word-break: keep-all;
+      position: relative;
+      max-width: 24.125rem;
+      @include media($tablet-big) {
+        font-size: 3rem;
+      }
+      @include media($tablet) {
+        font-size: 2.25rem;
+      }
+      @include media($mobile) {
+        font-size: clamp(1.5rem, 3vw, 2.1rem);
+      }
+      @media (orientation: landscape) {
+        line-height: 1;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      color: #8f95a5;
+      margin-bottom: clamp(2rem, 4.5vw, 3.8rem);
+      @include media($tablet) {
+        margin-bottom: 2rem;
+      }
+      @include media($mobile) {
+        text-align: center;
+      }
+      @media (orientation: landscape) {
+        margin-bottom: 1rem;
+      }
+    }
+    a {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      display: block;
+      @include media($mobile) {
+        margin-inline: auto;
+      }
+    }
+  }
+  &__title {
+    @include media($mobile) {
+      display: none;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 57%;
+      right: -3rem;
+      background-image: url(../../../docs/images/logo-icon.webp);
+      background-position: center;
+      background-size: 150%;
+      background-repeat: no-repeat;
+      width: 3.75rem;
+      height: 3.75rem;
+      @include media($tablet) {
+        right: 0rem;
+      }
+    }
+  }
+  &__mobile-title {
+    display: none;
+    margin-inline: auto;
+
+    @include media($mobile) {
+      display: block;
+    }
+    @include media($mobile-mini) {
+      width: 13rem;
+    }
+  }
+}

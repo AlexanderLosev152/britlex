@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../../../public/fonts/OpenSans-VariableFont_wdth\,wght.woff2')
-    format('woff2-variations');
-  src: url('../../../public/fonts/OpenSans-VariableFont_wdth\,wght.woff2')
-    format('woff2') tech('variations');
-  font-weight: 100 1000;
-  font-stretch: 25% 151%;
-}
+@import '../utils/mixins';
+@include font-face('Poppins', 'Poppins-Medium.woff2', 500, normal);
+@include font-face('Poppins', 'Poppins-Regular.woff2', 400, normal);
+@include font-face('Poppins', 'Poppins-SemiBold.woff2', 600, normal);

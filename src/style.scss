@@ -1,5 +1,7 @@
 @import 'normalize.css';
 
+@import './scss/utils/media';
+
 @import './scss/globals/reset';
 @import './scss/globals/vars';
 @import './scss/globals/container';
@@ -7,14 +9,25 @@
 @import './scss/globals/tailwind-classes';
 @import './scss/globals/typography';
 
+@import './scss/blocks/btn';
+
+@import './scss/blocks/header';
+@import './scss/blocks/nav';
+@import './scss/blocks/burger';
+@import './scss/blocks/hero';
+@import './scss/blocks/skills';
+@import './scss/blocks/about';
+
 body {
-  font-family: 'Open Sans';
+  font-family: var(--font-family);
   font-weight: 400;
-  // font-size: 13px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  color: #48555b;
-  position: relative;
+  font-size: 1.25rem;
+  color: #8f95a5;
+  line-height: 1.2;
+  @include media($tablet) {
+    font-size: 1rem;
+  }
+  @include media($mobile) {
+    font-size: 0.75rem;
+  }
 }
-
-

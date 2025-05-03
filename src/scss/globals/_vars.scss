@@ -1,5 +1,7 @@
 :root {
-  --container-w: 59rem;
+  --font-family: 'Poppins', sans-serif;
+
+  --container-w: 1338px;
   --container-p: 1rem;
-  --section-p: 58px;
+  --section-p: clamp(3.1rem, 5vw, 4.5rem);
 }

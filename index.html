@@ -6,211 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./docs/images/icon/Triangle.png"
+      href="./docs/images/logo-icon.webp"
       type="image/x-icon"
     />
-    <title>KONSTRUKT</title>
+    <title>Brillex</title>
   </head>
   <body>
-    <header class="header text-center">
-      <div
-        class="header__wrapper flex items-center flex-col"
-        style="background-image: url(./docs/images/bg.webp)"
-      >
-        <a href="#" class="header__logo logo">
-          <img src="./docs/images/logo.webp" alt="logo" />
-        </a>
+    <header class="header container flex justify-between items-center">
+      <a href="#" class="logo"
+        ><img src="./docs/images/logo.webp" alt="logo" />
+      </a>
 
-        <div class="header__text">
-          <h1 class="header__title h1">PARTNER WITH KONSTUCT</h1>
-          <p class="header__subtitle">
-            An award-winning construction management firm
-          </p>
-        </div>
-
-        <a class="header__scroll-btn" href="#main">SCROLL DOWN</a>
-      </div>
-
-      <nav class="nav flex items-center justify-between items-center container">
-        <a href="#" class="logo">
-          <img src="./docs/images/projeco-logo-black.webp" alt="logo" />
-        </a>
-
+      <nav class="nav">
         <ul class="nav__items flex">
-          <li><a class="nav__link" href="#home">HOME</a></li>
-          <li><a class="nav__link" href="#about">ABOUT</a></li>
-          <li><a class="nav__link" href="#services">SERVICES</a></li>
-          <li><a class="nav__link" href="#work">WORK</a></li>
-          <li><a class="nav__link" href="#contact">CONTACT</a></li>
+          <li><a class="nav__link" href="#home">Home </a></li>
+          <li><a class="nav__link" href="#scills">Skills</a></li>
+          <li><a class="nav__link" href="#about">About Us</a></li>
+          <li><a class="nav__link" href="#pricing">Pricing</a></li>
+          <li><a class="nav__link" href="#contacts">Contacts</a></li>
         </ul>
-
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
+
+      <a class="header__btn" href="#">Let’s Talk</a>
+
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
 
-    <main class="main" id="main">
-      <section class="story container section" id="about">
-        <h2 class="story__title h2 text-center">OUR STORY</h2>
-        <div class="story__wrapper flex items-center justify-between">
-          <div class="story__text">
-            <h3>
-              Founded in 2011 by John Mathew Smith,<span>Konstruct</span> has
-              become the number one construction management firm
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-              aliquam erat.
-            </p>
-          </div>
-
-          <div class="story__img flex">
-            <div>
-              <img src="./docs/images/we-plan.webp" alt="" />
-              <span>WE PLAN</span>
-            </div>
-            <div>
-              <img src="./docs/images/we-manage.webp" alt="" />
-              <span>WE MANAGE</span>
-            </div>
-            <div>
-              <img src="./docs/images/we-build.webp" alt="" />
-              <span>WE BUILD</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="capabilites container section" id="services">
-        <div class="capabilites__top flex justify-between">
-          <h2 class="capabilites__title h2">OUR CAPABILITIES</h2>
-          <p class="capabilites__descr">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+    <main class="main container">
+      <section class="hero flex justify-between">
+        <div class="hero__content grid items-center">
+          <h1 class="hero__title">
+            Learn<br />
+            Any Foreign Language
+          </h1>
+          <h1 class="hero__mobile-title text-center">
+            Learn Any Foreign Language
+          </h1>
+          <p>
+            With our teachers who write a program for each student, you will be
+            able to make your first sketch after the first lesson.
           </p>
-          <a class="capabilites__btn btn" href="#">ALL SERVICES</a>
+          <a class="btn" href="#">Get started</a>
         </div>
+        <div class="hero__img">
+          <img src="./docs/images/hero-bg.webp" alt="hero-img" loading="lazy" />
+        </div>
+      </section>
 
-        <div class="capabilites__items grid">
-          <div class="capabilites__item">
-            <img src="./docs/images/item-1.webp" alt="img" />
-            <h3>PROJECT AND CONSTRUCTION MANAGEMENT</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat.
-            </p>
+      <section class="skills section">
+        <h2 class="skills__title h2 text-center">Skills</h2>
+        <div class="skills__items grid">
+          <div class="skills__item">
+            <img src="./docs/images/speaking.webp" alt="skills-img" />
+            <div class="skills__item-content">
+              <h3 class="h3">Speaking</h3>
+              <p>
+                Improve your English skills and confidence. Live classes and
+                interactive lessons online. 20% extra free for a limited time
+                only
+              </p>
+              <p>
+                Learn English online and improve your skills through our
+                high-quality courses and resources – all designed for adult
+                language learners.
+              </p>
+              <a class="btn" href="#">Learn more</a>
+            </div>
           </div>
-          <div class="capabilites__item">
-            <img src="./docs/images/item-2.webp" alt="img" />
-            <h3>STRUCTURE AUDIT AND MAINTENANCE</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat.
-            </p>
+          <div class="skills__item">
+            <img src="./docs/images/writing.webp" alt="skills-img" />
+            <div class="skills__item-content">
+              <h3 class="h3">Writing</h3>
+              <p>
+                One of the most important and extensive areas of natural
+                science, the science that studies substances, also their
+                composition
+              </p>
+              <a class="btn" href="#">Learn more</a>
+            </div>
           </div>
-          <div class="capabilites__item">
-            <img src="./docs/images/item-3.webp" alt="img" />
-            <h3>FACTORY CONSTRUCTION AND MODELING</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat.
-            </p>
+          <div class="skills__item">
+            <img src="./docs/images/reading.webp" alt="skills-img" />
+            <div class="skills__item-content">
+              <h3 class="h3">Reading</h3>
+              <p>
+                perception and response actions of the user resulting from the
+                use and/or upcoming use of the product, system or service
+              </p>
+              <a class="btn" href="#">Learn more</a>
+            </div>
+          </div>
+          <div class="skills__item flex">
+            <img src="./docs/images/listening.webp" alt="skills-img" />
+            <div class="skills__item-content">
+              <h3 class="h3">Listening</h3>
+              <p>
+                Here you can find activities to practise your listening skills.
+                Listening will help you to improve your understanding
+              </p>
+              <a class="btn" href="#">Learn more</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="amazing" id="work">
-        <div
-          class="amazing__wrapper grid"
-          style="background-image: url(./docs/images/ammazing-bg.webp)"
-        >
-          <h2 class="amazing__title">Want to build something amazing?</h2>
-          <a class="btn" href="#">GET IN TOUCH</a>
-        </div>
-
-        <div class="amazing__form">
-          <div class="amazing__form-wrapper container flex">
-            <h3>Newsletter Signup</h3>
-            <form class="flex">
-              <input type="text" placeholder="test@youremail.com" />
-              <button class="btn" type="submit">SIGNUP</button>
-            </form>
+      <section class="about section">
+        <div class="about__wrapper grid justify-between">
+          <div class="about__content">
+            <h2 class="about__title h2">About Us</h2>
+            <p>
+              The model offers a framework for discussing problems related to
+              the user's experience, as well as possible ways and means of
+              solving them. Application development begins at the top level
+              (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both
+              users and the customer.
+            </p>
+            <table></table>
           </div>
+          <img src="./docs/images/about-bg.webp" alt="about-bg" />
+        </div>
+      </section>
+
+      <section class="pricing section">
+        <h2 class="poricing__title text-center">Pricing</h2>
+        <div class="pricing__wrapper flex">
+          <div class="pricing__item">
+            <img src="./docs/images/pricing-1.webp" alt="pricing-img" />
+            <h3 class="h3">Self-study online course</h3>
+            <p>
+              Start learning English online in live classes with qualified EC
+              teachers and students from all over the world.
+            </p>
+            <div class="pricing__item-price"><span>£5.99</span>per month</div>
+          </div>
+
+          <div class="pricing__item">
+            <img src="./docs/images/pricing-2.webp" alt="pricing-img" />
+            <h3 class="h3">Self-study online course</h3>
+            <p>
+              Interactive group classes with expert teachers. Free 7-day trial
+            </p>
+            <div class="pricing__item-price"><span> £12.99</span>per month</div>
+          </div>
+
+          <div class="pricing__item">
+            <img src="./docs/images/pricing-3.webp" alt="pricing-img" />
+            <h3 class="h3">Personal Tuition</h3>
+            <p>
+              Online one-to-one English tutoring – enjoy our first session for
+              only $1
+            </p>
+            <div class="pricing__item-price"><span> £20.99</span>per month</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section flex">
+        <img src="./docs/images/contact.webp" alt="contact-bg" />
+        <div class="contact__wrapper">
+          <h2 class="contact__title">Contact Us</h2>
+          <p>
+            Discover your current English level by taking our free online
+            English test.Sign up to our newsletter for learning tips and free
+            resource
+          </p>
+          <form></form>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__wrapper container flex justify-between flex-wrap">
-        <div class="footer__company">
-          <span>COMPANY</span>
-          <a href="#" class="logo">
-            <img src="./docs/images/logo.webp" alt="logo" />
-          </a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
-          </p>
-        </div>
-
-        <div class="footer__link flex-wrap">
-          <div>
-            <h5>LINKS</h5>
-            <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">BLOG</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">TERMS</a></li>
-              <li><a href="">PARTNERS</a></li>
-              <li><a href="">SERVICES</a></li>
-              <li><a href="">CAREERS</a></li>
-              <li><a href="">NEWS</a></li>
-              <li><a href="">PROJECTS</a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href="">CONTACT US</a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </div>
-          <div>
-            <h5 id="contact">CONTACT US</h5>
-            <ul>
-              <li><a href="">213 Baker Street</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">7000 KNW,</a></li>
-              <li><a href="">Kountry Name</a></li>
-              <li><a href="">+23 994 233 4022</a></li>
-              <li><a href="">FAQ</a></li>
-              <li><a href="">info@konstruct.com</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <ul class="footer__social flex">
-          <li>
-            <a href="#"
-              ><img src="./docs/images/facebook.webp" alt="social"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./docs/images/twetter.webp" alt="social"
-            /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./docs/images/google.webp" alt="social" /></a>
-          </li>
-        </ul>
+    <footer class="footer container flex justify-between">
+      <a href="#" class="logo"
+        ><img src="./docs/images/logo.webp" alt="logo" />
+      </a>
+      <div class="footer__link">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
       </div>
     </footer>
 
