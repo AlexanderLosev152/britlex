@@ -1,0 +1,9 @@
+.footer {
+  border-top: 1px solid var(--color-main);
+  padding-block: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  &__link {
+    gap: 1rem;
+  }
+}
