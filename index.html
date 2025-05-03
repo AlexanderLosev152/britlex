@@ -118,6 +118,11 @@
         <div class="about__wrapper grid justify-between">
           <div class="about__content">
             <h2 class="about__title h2">About Us</h2>
+            <img
+              class="about__img-mobile"
+              src="./docs/images/about-bg.webp"
+              alt="about-bg"
+            />
             <p>
               The model offers a framework for discussing problems related to
               the user's experience, as well as possible ways and means of
@@ -126,16 +131,35 @@
               abstractly from the point of view of the expectations of both
               users and the customer.
             </p>
-            <table></table>
+            <table class="about__table grid">
+              <tbody class="grid">
+                <tr class="flex">
+                  <th>800</th>
+                  <td>Pupils</td>
+                </tr>
+                <tr class="flex">
+                  <th>18</th>
+                  <td>Teachers</td>
+                </tr>
+                <tr class="flex">
+                  <th>6</th>
+                  <td>Teachers</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <img src="./docs/images/about-bg.webp" alt="about-bg" />
+          <img
+            class="about__img"
+            src="./docs/images/about-bg.webp"
+            alt="about-bg"
+          />
         </div>
       </section>
 
       <section class="pricing section">
-        <h2 class="poricing__title text-center">Pricing</h2>
-        <div class="pricing__wrapper flex">
-          <div class="pricing__item">
+        <h2 class="pricing__title text-center">Pricing</h2>
+        <div class="pricing__wrapper grid">
+          <div class="pricing__item grid">
             <img src="./docs/images/pricing-1.webp" alt="pricing-img" />
             <h3 class="h3">Self-study online course</h3>
             <p>
@@ -145,7 +169,7 @@
             <div class="pricing__item-price"><span>£5.99</span>per month</div>
           </div>
 
-          <div class="pricing__item">
+          <div class="pricing__item grid">
             <img src="./docs/images/pricing-2.webp" alt="pricing-img" />
             <h3 class="h3">Self-study online course</h3>
             <p>
@@ -154,7 +178,7 @@
             <div class="pricing__item-price"><span> £12.99</span>per month</div>
           </div>
 
-          <div class="pricing__item">
+          <div class="pricing__item grid">
             <img src="./docs/images/pricing-3.webp" alt="pricing-img" />
             <h3 class="h3">Personal Tuition</h3>
             <p>
@@ -166,16 +190,19 @@
         </div>
       </section>
 
-      <section class="contact section flex">
+      <section class="contact section grid justify-between">
         <img src="./docs/images/contact.webp" alt="contact-bg" />
         <div class="contact__wrapper">
-          <h2 class="contact__title">Contact Us</h2>
+          <h2 class="contact__title h2">Contact Us</h2>
           <p>
             Discover your current English level by taking our free online
             English test.Sign up to our newsletter for learning tips and free
             resource
           </p>
-          <form></form>
+          <form class="contact__form">
+            <input type="text" placeholder="Enter Your E-mail" />
+            <button class="btn">Subscribe</button>
+          </form>
         </div>
       </section>
     </main>

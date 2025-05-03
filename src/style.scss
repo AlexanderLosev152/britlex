@@ -17,12 +17,14 @@
 @import './scss/blocks/hero';
 @import './scss/blocks/skills';
 @import './scss/blocks/about';
+@import './scss/blocks/pricing';
+@import './scss/blocks/contact';
 
 body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 1.25rem;
-  color: #8f95a5;
+  color: var(--color-main);
   line-height: 1.2;
   @include media($tablet) {
     font-size: 1rem;
