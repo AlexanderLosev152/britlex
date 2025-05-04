@@ -25,7 +25,7 @@
         font-weight: 600;
         font-size: 3rem;
         line-height: 167%;
-        color: #2a3246;
+        color: var(--second-color);
         @include media($tablet) {
           font-size: 1.875rem;
         }
@@ -36,7 +36,7 @@
       td {
         font-weight: 400;
         font-size: 1.25rem;
-        color: #8f95a5;
+        color: var(--color-main);
         @include media($tablet) {
           font-size: 1rem;
         }

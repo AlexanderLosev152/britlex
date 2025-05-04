@@ -1,7 +1,12 @@
+@import '../utils/mixins';
 .btn {
   color: #fff;
-  padding: 1em clamp(4em, 6vw, 6em);
+  padding: 1em clamp(3em, 6vw, 6em);
   border-radius: 5px;
-  background: #263238;
+  background: var(--second-color);
   text-wrap: nowrap;
+  transition: opacity 0.3s;
+  @include hover {
+    opacity: 0.9;
+  }
 }

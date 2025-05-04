@@ -48,7 +48,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    // min-height: 290px;
     @include media($tablet) {
       justify-content: start;
       align-items: flex-start;
@@ -71,7 +70,7 @@
     p {
       font-weight: 400;
       font-size: clamp(0.8125rem, 1.5vw, 1rem);
-      color: #8f95a5;
+      color: var(--color-main);
       margin-bottom: 1rem;
     }
     a {

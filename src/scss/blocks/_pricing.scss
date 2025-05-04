@@ -12,14 +12,9 @@
     }
   }
   &__item {
-    display: flex;
-    flex-direction: column;
     position: relative;
     max-width: 25rem;
     min-height: clamp(28rem, 30vw, 30rem);
-    @include media($tablet) {
-      align-items: center;
-    }
     img {
       width: 15rem;
       height: 14rem;
@@ -47,7 +42,7 @@
     span {
       font-weight: 400;
       font-size: 30px;
-      color: #263238;
+      color: var(--second-color);
     }
   }
 }

@@ -1,15 +1,15 @@
 h1 {
-  color: #000;
+  color: var(--black-lolor);
 }
 .h2 {
   font-weight: 600;
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   line-height: 1;
-  color: #000;
+  color: var(--black-lolor);
 }
 
 .h3 {
   font-weight: 600;
   font-size: clamp(1.125rem, 2vw, 1.875rem);
-  color: #000;
+  color: var(--black-lolor);
 }

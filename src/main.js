@@ -8,6 +8,12 @@ const links = document.querySelectorAll('.nav ul li a');
 btn.addEventListener('click', () => {
   btn.classList.toggle('open');
   nav.classList.toggle('open');
+
+  if (btn.classList.contains('open')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
 });
 
 links.forEach((el) => {

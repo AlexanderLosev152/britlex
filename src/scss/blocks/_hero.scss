@@ -34,7 +34,7 @@
     p {
       font-weight: 400;
       font-size: clamp(1rem, 2vw, 1.5rem);
-      color: #8f95a5;
+      color: var(--color-main);
       margin-bottom: clamp(2rem, 4.5vw, 3.8rem);
       @include media($tablet) {
         margin-bottom: 2rem;
