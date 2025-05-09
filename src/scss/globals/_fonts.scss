@@ -1,4 +1,23 @@
 @import '../utils/mixins';
-@include font-face('Poppins', 'Poppins-Medium.woff2', 500, normal);
-@include font-face('Poppins', 'Poppins-Regular.woff2', 400, normal);
-@include font-face('Poppins', 'Poppins-SemiBold.woff2', 600, normal);
+@include font-face('SF-Pro-Display', 'SF-Pro-Display-Bold.woff2', 700, normal);
+@include font-face(
+  'SF-Pro-Display',
+  'SF-Pro-Display-Semibold.woff2',
+  600,
+  normal
+);
+@include font-face(
+  'SF-Pro-Display',
+  'SF-Pro-Display-Medium.woff2',
+  500,
+  normal
+);
+@include font-face(
+  'SF-Pro-Display',
+  'SF-Pro-Display-Regular.woff2',
+  400,
+  normal
+);
+@include font-face('SF-Pro-Display', 'SF-Pro-Display-Light.woff2', 300, normal);
+@include font-face('Golos-Text', 'GolosText-Bold.woff2', 600, normal);
+@include font-face('Rubik', 'Rubik.woff2', 700, normal);

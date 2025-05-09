@@ -1,15 +1,16 @@
-h1 {
-  color: var(--black-lolor);
+.h1 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 95px;
+  text-align: right;
 }
 .h2 {
+  font-family: var(--font-family);
   font-weight: 600;
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  line-height: 1;
-  color: var(--black-lolor);
+  font-size: 43px;
 }
-
 .h3 {
+  font-family: var(--font-family);
   font-weight: 600;
-  font-size: clamp(1.125rem, 2vw, 1.875rem);
-  color: var(--black-lolor);
+  font-size: 35px;
 }

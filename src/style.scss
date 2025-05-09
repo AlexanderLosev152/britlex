@@ -9,28 +9,12 @@
 @import './scss/globals/tailwind-classes';
 @import './scss/globals/typography';
 
-@import './scss/blocks/btn';
-
 @import './scss/blocks/header';
-@import './scss/blocks/nav';
-@import './scss/blocks/burger';
-@import './scss/blocks/hero';
-@import './scss/blocks/skills';
-@import './scss/blocks/about';
-@import './scss/blocks/pricing';
-@import './scss/blocks/contact';
-@import './scss/blocks/footer';
 
 body {
   font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: var(--color-main);
-  line-height: 1.2;
-  @include media($tablet) {
-    font-size: 1rem;
-  }
-  @include media($mobile) {
-    font-size: 0.75rem;
-  }
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--ligth);
+  background: var(--bg);
 }

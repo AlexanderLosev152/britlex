@@ -1,12 +1,17 @@
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'SF Pro Display', sans-serif;
+  --second-family: 'Golos', sans-serif;
+  --third-family: 'Rubik', sans-serif;
 
-  --container-w: 1338px;
+  --font-size: 1.25rem;
+  --font-weight: 400;
+
+  --container-w: 1113px;
   --container-p: 1rem;
-  --section-p: clamp(2rem, 5vw, 4.5rem);
 
-  --color-main: #8f95a5;
-  --second-color: #263238;
-  --black-lolor: #000;
-  --white-color: #fff;
+  // color
+
+  --ligth: #fff;
+  --bg: #030202;
+  --accent-color: #900000;
 }

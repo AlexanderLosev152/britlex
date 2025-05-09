@@ -5,39 +5,65 @@ import imageminWebp from 'imagemin-webp';
 import fs from 'fs-extra';
 import { glob } from 'glob';
 import { resolve } from 'path';
+import ttf2woff2 from 'ttf2woff2';
 
 export default defineConfig({
   build: {
-    outDir: 'docs', // изменяем папку сборки на docs
-    emptyOutDir: true, // очищаем папку перед сборкой
+    outDir: 'docs',
+    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        // добавьте другие точки входа, если нужно
       },
     },
+    assetsInlineLimit: 0, // Отключаем инлайнинг шрифтов
   },
   plugins: [
     ViteImageOptimizer({
-      jpg: { quality: 70 },
-      png: { quality: 70 },
+      jpg: { quality: 50 },
+      png: { quality: 50 },
       webp: { quality: 50 },
     }),
     {
-      name: 'convert-and-cleanup',
+      name: 'convert-assets',
       async writeBundle() {
-        // Конвертируем в WebP (теперь сохраняем в docs/images)
-        const files = await glob('public/images/*.{jpg,png}');
-        if (files.length > 0) {
-          await imagemin(files, {
-            destination: 'docs/images', // изменяем путь на docs/images
+        // 1. Конвертируем изображения в WebP
+        const imageFiles = await glob('public/images/*.{jpg,png}');
+        if (imageFiles.length > 0) {
+          await imagemin(imageFiles, {
+            destination: 'docs/assets/images',
             plugins: [imageminWebp({ quality: 50 })],
           });
-          console.log(`✅ ${files.length} images converted to WebP`);
+          console.log(`✅ ${imageFiles.length} images converted to WebP`);
         }
 
-        // Удаляем оригинальные JPG/PNG из docs
-        const filesToDelete = await glob('docs/images/*.{jpg,png}');
+        // 2. Конвертируем шрифты в WOFF2
+        const fontFiles = await glob('public/fonts/**/*.{ttf,otf}');
+        if (fontFiles.length > 0) {
+          await fs.ensureDir('docs/assets/fonts');
+
+          for (const fontFile of fontFiles) {
+            try {
+              const fileName = fontFile
+                .split('/')
+                .pop()
+                .replace(/\.[^/.]+$/, '');
+              const outputPath = `docs/assets/fonts/${fileName}.woff2`;
+              const input = fs.readFileSync(fontFile);
+              fs.writeFileSync(outputPath, ttf2woff2(input));
+              console.log(`✓ Converted ${fontFile} to WOFF2`);
+            } catch (err) {
+              console.error(`⚠️ Error converting ${fontFile}:`, err.message);
+            }
+          }
+        }
+
+        // 3. Удаляем оригинальные JPG/PNG/TTF/OTF
+        const filesToDelete = [
+          ...(await glob('docs/assets/images/*.{jpg,png}')),
+          ...(await glob('docs/assets/fonts/*.{ttf,otf}')),
+        ];
+
         if (filesToDelete.length > 0) {
           await Promise.all(filesToDelete.map((file) => fs.remove(file)));
           console.log(`🧹 ${filesToDelete.length} original files removed`);
